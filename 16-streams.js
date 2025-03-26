@@ -14,6 +14,7 @@ readStream.on('data', (chunk) => {
   console.log(`Received chunk ${counter}: ${chunk}`);
 });
 
+
 // Handle the 'end' event
 readStream.on('end', () => {
   console.log(`Stream ended. Total chunks received: ${counter}`);
